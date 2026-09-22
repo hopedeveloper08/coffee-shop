@@ -28,7 +28,7 @@ export default function TopbarNav() {
               href={item.link}
               className={`
               text-lg lg:text-xl 
-              ${item.link === pathname ? "text-primary-soft font-dana-medium" : "text-secondary-soft font-dana"}
+              ${item.link === pathname ? "text-primary font-dana-medium" : "text-secondary-soft font-dana"}
               hover:text-primary-soft
               tracking-tightest 
               leading-14 
