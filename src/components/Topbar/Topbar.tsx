@@ -1,4 +1,5 @@
 import Account from "./Account/Account";
+import Cart from "./Cart/Cart";
 import TopbarMobile from "./TopbarMobile";
 import TopbarNav from "./TopbarNav";
 import TopbarTheme from "./TopbarTheme";
@@ -23,6 +24,7 @@ export default function Topbar() {
         <div className="w-full flex justify-between items-center">
           <TopbarNav />
           <div className="flex items-center gap-x-3 lg:gap-x-5 xl:gap-x-10">
+            <Cart />
             <TopbarTheme />
             <div className="w-px bg-white/20 h-14"></div>
             <Account />
