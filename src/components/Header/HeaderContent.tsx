@@ -1,6 +1,6 @@
 export default function HeaderContent() {
   return (
-    <div className="container mx-auto overflow-y-hidden relative h-full md:min-h-screen grid grid-cols-2 lg:grid-cols-8">
+    <div className="container max-w-7xl mx-auto overflow-y-hidden relative h-full md:min-h-screen grid grid-cols-2 lg:grid-cols-8">
       <div className="text-white my-auto col-start-2 col-end-3 lg:col-start-6 lg:col-end-9">
         <h2 className="font-morabba-bold text-2xl md:text-6xl mb-0.5 md:mb-2">
           قهوه عربیکا تانزانیا
