@@ -13,15 +13,15 @@ export default function TopbarMobile() {
         shadow
     "
     >
-      <button className="btn btn-ghost btn-circle">
+      <label htmlFor="menu-drawer" className="btn btn-ghost btn-circle">
         <HiBars3 className="size-7" />
-      </button>
+      </label>
       <a href="/">
         <img src={LOGO_TYPE_COLOR_IMAGE_URL} alt="logo" className="h-8" />
       </a>
-      <button className="btn btn-ghost btn-circle">
+      <label htmlFor="cart-drawer" className="btn btn-ghost btn-circle">
         <HiOutlineShoppingCart className="size-7" />
-      </button>
+      </label>
     </header>
   );
 }

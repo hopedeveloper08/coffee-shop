@@ -1,5 +1,6 @@
+import Cart from "../Cart/Cart";
+import MobileCart from "../Cart/MobileCart";
 import Account from "./Account/Account";
-import Cart from "./Cart/Cart";
 import TopbarMobile from "./TopbarMobile";
 import TopbarNav from "./TopbarNav";
 import TopbarTheme from "./TopbarTheme";
@@ -32,6 +33,7 @@ export default function Topbar() {
         </div>
       </header>
       <TopbarMobile />
+      <MobileCart />
     </>
   );
 }
