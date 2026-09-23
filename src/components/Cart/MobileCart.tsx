@@ -21,7 +21,7 @@ export default function MobileCart() {
   return (
     <div className="drawer drawer-end">
       <input id="cart-drawer" type="checkbox" className="drawer-toggle" />
-      <aside className="drawer-side">
+      <aside className="drawer-side z-50">
         <label
           htmlFor="cart-drawer"
           aria-label="close sidebar"
