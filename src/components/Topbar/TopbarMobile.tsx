@@ -1,5 +1,5 @@
+import LogoType from "../../assets/logo-type.svg?react"
 import { HiBars3, HiOutlineShoppingCart } from "react-icons/hi2";
-import { LOGO_TYPE_COLOR_IMAGE_URL } from "../../lib/constants";
 
 export default function TopbarMobile() {
   return (
@@ -17,7 +17,7 @@ export default function TopbarMobile() {
         <HiBars3 className="size-7" />
       </label>
       <a href="/">
-        <img src={LOGO_TYPE_COLOR_IMAGE_URL} alt="logo" className="h-8" />
+        <LogoType className="h-10 text-primary" />
       </a>
       <label htmlFor="cart-drawer" className="btn btn-ghost btn-circle">
         <HiOutlineShoppingCart className="size-7" />
