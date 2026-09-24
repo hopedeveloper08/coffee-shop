@@ -5,12 +5,12 @@ export default function Banner() {
     <section
       className="
         mt-8 md:mt-20
-        container max-w-7xl px-4
+        container mx-auto max-w-7xl px-4
       "
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {bannerData.map((item) => (
-          <a href="#"
+          <a href={item.link} key={item.title}
             className={
               item.image +
               ` 

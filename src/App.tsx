@@ -4,6 +4,7 @@ import { themeInitialization } from "./lib/theme";
 import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
 import Banner from "./components/Banner/Banner";
+import Categories from "./components/Categories/Categories";
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Products />
         <Banner />
+        <Categories />
       </main>
     </>
   );
