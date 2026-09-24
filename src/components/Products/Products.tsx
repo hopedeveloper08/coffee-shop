@@ -4,7 +4,7 @@ import Product from "./Product";
 
 export default function Products() {
   return (
-    <section className="bg-[url(/images/products-bg.png)] pt-8 md:pt-48 bg-fit bg-no-repeat">
+    <section className="md:bg-[url(/images/products-bg.png)] pt-8 md:pt-48 bg-inherit bg-no-repeat">
       <div className="container max-w-7xl mx-auto px-4">
         <SectionTitle
           title="جدیدترین محصولات"
