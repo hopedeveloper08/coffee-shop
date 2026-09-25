@@ -24,6 +24,8 @@ export default function ProductCart({
     <div
       className="
         bg-base-200 text-base-content
+        w-43 md:w-75
+        mx-auto
         p-2 md:p-5
         rounded-2xl
         flex flex-col justify-center items-center

@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
 import Banner from "./components/Banner/Banner";
 import Categories from "./components/Categories/Categories";
+import ProductsSlider from "./components/ProductsSlider/ProductsSlider";
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
         <Products />
         <Banner />
         <Categories />
+        <ProductsSlider />
       </main>
     </>
   );
