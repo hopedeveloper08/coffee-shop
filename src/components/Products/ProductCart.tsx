@@ -96,7 +96,7 @@ export default function ProductCart({
           <button
             className="
               bg-base-100 hover:bg-accent hover:text-accent-content 
-              tooltip tooltip-accent tooltip-bottom
+              tooltip tooltip-accent tooltip-top
             "
             data-tip="افزودن به سبد خرید"
             >
@@ -105,7 +105,7 @@ export default function ProductCart({
           <button
             className="
             hover:text-accent
-            tooltip tooltip-accent tooltip-bottom
+            tooltip tooltip-accent tooltip-top
           "
           data-tip="مقایسه"
           >

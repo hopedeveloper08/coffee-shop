@@ -1,5 +1,4 @@
 import { HiXMark } from "react-icons/hi2";
-import { LOGO_IMAGE_URL } from "../../lib/constants";
 import Logo from "../../assets/logo.svg?react";
 import LogoType from "../../assets/logo-type.svg?react";
 

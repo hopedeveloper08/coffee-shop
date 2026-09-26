@@ -1,3 +1,7 @@
+import Discovery from "../assets/Discovery.svg?react";
+import Activity from "../assets/Activity.svg?react";
+import TicketStar from "../assets/Ticket-Star.svg?react";
+
 // Image URLs
 export const LOGO_IMAGE_URL = "/images/app-logo.png";
 
@@ -45,5 +49,20 @@ export const categoriesData = [
     image: "/images/categories/category5.png",
     title: "قهوه ترک",
     link: "#",
+  },
+];
+
+export const clubData = [
+  {
+    title: "چرخ و بخت",
+    Icon: Discovery,
+  },
+  {
+    title: "ماموریت‌ها",
+    Icon: Activity,
+  },
+  {
+    title: "جایزه‌ها",
+    Icon: TicketStar,
   },
 ];

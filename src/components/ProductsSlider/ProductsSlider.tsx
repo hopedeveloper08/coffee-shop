@@ -14,21 +14,21 @@ export default function ProductsSlider() {
       <SectionTitle title="جدیدترین محصولات" subtitle="پیشنهاد قهوه خورها ...">
         <div
           className="
-            flex gap-3
+            flex gap-3 md:gap-5
             *:btn *:btn-circle *:btn-ghost 
-            *:size-9
+            *:size-9 *:md:size-11
             *:bg-base-200 *:text-base-content
         "
         >
           <button className="products-slide-prev-slide">
-            <HiMiniChevronRight className="size-5" />
+            <HiMiniChevronRight className="size-5 md:size-6" />
           </button>
           <button className="products-slide-next-slide">
-            <HiMiniChevronLeft className="size-5" />
+            <HiMiniChevronLeft className="size-5 md:size-6" />
           </button>
         </div>
       </SectionTitle>
-      <div className="mt-5">
+      <div className="mt-5 md:mt-12">
         <Slider />
       </div>
     </section>

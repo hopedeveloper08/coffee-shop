@@ -5,7 +5,7 @@ export default function Categories() {
     <section
       className="
         container mx-auto max-w-7xl px-4
-        mt-10 md:20
+        mt-10 md:mt-20
         flex flex-wrap justify-center items-center
         gap-5 md:gap-15
     "
