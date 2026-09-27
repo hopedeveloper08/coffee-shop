@@ -1,4 +1,5 @@
 import { FiPhoneCall } from "react-icons/fi";
+import { CONTACT_IMAGE_URL } from "../../lib/constants";
 
 export default function Contact() {
   return (
@@ -11,7 +12,7 @@ export default function Contact() {
     >
       <div className="w-full md:basis-1/3 lg:basis-1/4 max-md:pr-8 pl-8">
         <img
-          src="/images/contact.png"
+          src={CONTACT_IMAGE_URL}
           alt="contact"
           className="w-75 h-76 mx-auto"
         />

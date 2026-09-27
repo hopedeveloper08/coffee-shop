@@ -11,13 +11,13 @@ export default function Cart() {
       title: "قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی",
       price: 1350000,
       discount: 350000,
-      image: "/images/products/p2.png",
+      image: "/coffee-shop/images/products/p2.png",
     },
     {
       id: 2,
       title: "قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی",
       price: 1700000,
-      image: "/images/products/p1.png",
+      image: "/coffee-shop/images/products/p1.png",
     },
   ];
 
