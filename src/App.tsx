@@ -7,6 +7,7 @@ import Banner from "./components/Banner/Banner";
 import Categories from "./components/Categories/Categories";
 import ProductsSlider from "./components/ProductsSlider/ProductsSlider";
 import Club from "./components/Club/Club";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <Categories />
         <ProductsSlider />
         <Club />
+        <Blog />
       </main>
     </>
   );

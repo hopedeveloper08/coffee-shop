@@ -66,3 +66,26 @@ export const clubData = [
     Icon: TicketStar,
   },
 ];
+
+export const blogData = [
+  {
+    image: "/images/blogs/blog-1.png",
+    title: "طرز تهیه قهوه دمی با دستگاه اروپرس",
+    date: "12 مهر 1405",
+  },
+  {
+    image: "/images/blogs/blog-2.png",
+    title: "طرز تهیه قهوه اسپرسو با دستگاه خانگی",
+    date: "24 شهریور 1405",
+  },
+  {
+    image: "/images/blogs/blog-3.png",
+    title: "طرز تهیه یک فنجان کافه زینو برزیلی",
+    date: "6 شهریور 1405",
+  },
+  {
+    image: "/images/blogs/blog-4.png",
+    title: "طرز تهیه قهوه دالگونا مناسب روز‌های کرونایی",
+    date: "17 مرداد 1405",
+  },
+];

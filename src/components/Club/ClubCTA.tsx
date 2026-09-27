@@ -6,6 +6,7 @@ export default function ClubCTA() {
     <div
       className="
         flex gap-3 items-center lg:justify-between md:grow
+        mr-5
       "
     >
       <div className="flex gap-2 basis-2/3">
