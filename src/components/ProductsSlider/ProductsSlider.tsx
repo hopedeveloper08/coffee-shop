@@ -7,7 +7,7 @@ export default function ProductsSlider() {
   return (
     <section
       className="
-        container px-4 mx-auto max-w-7xl
+        container
         mt-10 md:mt-20
       "
     >

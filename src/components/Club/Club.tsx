@@ -5,8 +5,8 @@ export default function Club() {
   return (
     <section
       className="
-        container mx-auto max-w-7xl px-4
-        mt-8 lg:mt-20
+        container
+        mt-8 md:mt-20
       "
     >
       <div

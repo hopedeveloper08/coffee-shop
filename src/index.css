@@ -112,6 +112,10 @@
   --color-warning: var(--color-yellow-400);
 }
 
+@utility container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
 html,
 body {
   background: var(--color-base-100);

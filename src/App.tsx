@@ -9,6 +9,7 @@ import ProductsSlider from "./components/ProductsSlider/ProductsSlider";
 import Club from "./components/Club/Club";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
+import Services from "./components/Services";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
         <Club />
         <Blog />
         <Contact />
+        <Services />
       </main>
     </>
   );

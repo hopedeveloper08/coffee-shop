@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       className="
-      container max-w-7xl mx-auto px-4
+      container  
       mt-8 md:mt-28
       flex max-md:flex-col
     "
