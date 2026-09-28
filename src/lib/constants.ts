@@ -91,3 +91,42 @@ export const blogData = [
     date: "17 مرداد 1405",
   },
 ];
+
+export const FooterLinkData = [
+  [
+    {
+      title: "حریم خصوصی",
+      link: "#",
+    },
+    {
+      title: "عودت کالا",
+      link: "#",
+    },
+    {
+      title: "شرایط استفاده",
+      link: "#",
+    },
+    {
+      title: "ثبت سفارش",
+      link: "#",
+    },
+  ],
+  [
+    {
+      title: "پرسش‌های متداول",
+      link: "#",
+    },
+    {
+      title: "فرصت‌های شغلی",
+      link: "#",
+    },
+    {
+      title: "ضمانت نامه‌ها",
+      link: "#",
+    },
+    {
+      title: "ارتباط‌‌باما",
+      link: "#",
+    },
+  ],
+];

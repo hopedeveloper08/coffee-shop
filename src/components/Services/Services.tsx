@@ -1,7 +1,7 @@
-import Coffee from "../assets/services/coffee.svg?react";
-import ExpressDelivery from "../assets/services/express-delivery.svg?react";
-import Pitcher from "../assets/services/pitcher.svg?react";
-import Support from "../assets/services/support.svg?react";
+import Coffee from "../../assets/services/coffee.svg?react";
+import ExpressDelivery from "../../assets/services/express-delivery.svg?react";
+import Pitcher from "../../assets/services/pitcher.svg?react";
+import Support from "../../assets/services/support.svg?react";
 
 export default function Services() {
   return (

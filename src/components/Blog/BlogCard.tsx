@@ -1,4 +1,5 @@
 import { HiArrowLeft } from "react-icons/hi2";
+import LogoType from "../../assets/logo-type.svg?react";
 
 type BlogCardProps = {
   image: string;
@@ -15,9 +16,22 @@ export default function BlogCard({ image, title, date }: BlogCardProps) {
         rounded-2xl
         p-2.5
         flex lg:flex-col gap-3 md:gap-4
+        group
       "
     >
-      <div className="max-lg:size-32">
+      <div className="max-lg:size-32 relative">
+        <div
+          className="
+            absolute
+            hidden lg:group-hover:flex justify-center items-center
+            size-full
+            bg-linear-to-l from-primary to-primary-soft
+            opacity-80
+            
+            "
+        >
+          <LogoType className="text-[#78350F] lg:w-35 lg:h-14" />
+        </div>
         <img
           src={image}
           alt="blog image"

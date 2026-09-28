@@ -9,7 +9,8 @@ import ProductsSlider from "./components/ProductsSlider/ProductsSlider";
 import Club from "./components/Club/Club";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
-import Services from "./components/Services";
+import Services from "./components/Services/Services";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
         <Blog />
         <Contact />
         <Services />
+        <Footer />
       </main>
     </>
   );
