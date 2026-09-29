@@ -52,7 +52,7 @@ export default function ProductCart({
       <div>
         <img src={image} alt="product image" className="size-32 md:size-65" />
       </div>
-      <h3 className="font-dana-medium text-sm md:text-xl mt-2 md:mt-5">
+      <h3 className="font-dana-medium text-sm md:text-xl mt-2 md:mt-5 line-clamp-2">
         {title}
       </h3>
       <div className="w-full flex justify-start">

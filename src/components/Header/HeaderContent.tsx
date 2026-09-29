@@ -9,7 +9,7 @@ export default function HeaderContent() {
           یک فنجان بالانس!
         </span>
         <div className="bg-primary w-25 h-px md:h-0.5 my-3 md:my-8"></div>
-        <p className="font-dana text-xs md:text-2xl max-w-50 md:max-w-115">
+        <p className="font-dana text-xs md:text-2xl max-w-50 md:max-w-115 text-justify">
           قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که
           در نواحی مختلف کمربند قهوه کشت میشود.
         </p>

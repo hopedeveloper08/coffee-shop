@@ -25,7 +25,7 @@ export default function Contact() {
           کیفیت قهوه را از ما بخواهید ...
         </h5>
         <p className="md:my-2 text-2xl text-secondary">. . .</p>
-        <p className="text-lg md:text-2xl">
+        <p className="text-lg md:text-2xl text-justify">
           فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه معطری پیدا
           کنند و دسرهای خوشمزه ما را که کاملاً با قهوه داغ همراه شده است، امتحان
           کنند. فضای داخلی شیک و کارکنان خوش برخورد ما روز شما را می سازد!

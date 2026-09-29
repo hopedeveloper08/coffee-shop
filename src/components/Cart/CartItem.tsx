@@ -15,7 +15,7 @@ export default function CartItem({
     <div className="flex gap-x-1 md:gap-x-2.5 border-b border-b-gray-100 dark:border-b-white/5 mt-5 pb-5">
       <img src={image} alt="Product Image" className="size-22 md:size-30" />
       <div className="flex flex-col justify-between">
-        <div className="font-dana-medium text-sm md:text-base text-base-content">
+        <div className="font-dana-medium text-sm md:text-base text-base-content line-clamp-2">
           {title}
         </div>
         <div>
