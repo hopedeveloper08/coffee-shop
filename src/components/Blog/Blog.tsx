@@ -29,7 +29,7 @@ export default function Blog() {
       </SectionTitle>
       <div className="mt-5 md:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5 md:gap-5">
         {blogData.map((item) => (
-          <BlogCard title={item.title} image={item.image} date={item.date} />
+          <BlogCard key={item.title} title={item.title} image={item.image} date={item.date} />
         ))}
       </div>
     </section>

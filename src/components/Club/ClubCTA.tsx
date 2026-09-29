@@ -12,6 +12,7 @@ export default function ClubCTA() {
       <div className="flex gap-2 basis-2/3">
         {clubData.map((item) => (
           <div
+            key={item.title}
             className="
             flex flex-col gap-2 lg:gap-5 items-center       
             lg:min-w-25 h-full

@@ -51,8 +51,7 @@ export default function BlogCard({ image, title, date }: BlogCardProps) {
         <div className="w-full h-px lg:w-px lg:h-full bg-gray-200 dark:bg-white/10"></div>
         <div className="flex justify-between items-center text-xs md:text-base">
           <p className="text-accent">{date}</p>
-          <a
-            href="#"
+          <span
             className="
               lg:hidden
               text-primary
@@ -65,7 +64,7 @@ export default function BlogCard({ image, title, date }: BlogCardProps) {
           >
             مطالعه
             <HiArrowLeft />
-          </a>
+          </span>
         </div>
       </div>
     </a>

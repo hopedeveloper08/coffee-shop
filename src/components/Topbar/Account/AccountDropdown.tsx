@@ -1,11 +1,15 @@
+import { useContext } from "react";
 import {
   HiOutlineArrowRightOnRectangle,
   HiOutlineCog6Tooth,
   HiOutlineEnvelope,
   HiOutlineShoppingBag,
 } from "react-icons/hi2";
+import AuthContext from "../../../contexts/auth";
 
 export default function AccountDropdown() {
+  const { logout } = useContext(AuthContext);
+
   return (
     <div
       className="
@@ -44,6 +48,7 @@ export default function AccountDropdown() {
         </div>
         <div className="w-full h-px bg-secondary-soft/30 my-3"></div>
         <button
+          onClick={logout}
           className="
             flex items-center gap-2 
             w-full
