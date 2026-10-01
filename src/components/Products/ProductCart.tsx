@@ -3,6 +3,8 @@ import {
   HiOutlineShoppingCart,
   HiOutlineStar,
 } from "react-icons/hi2";
+import { useAppDispatch } from "../../redux/hooks";
+import { addToCart } from "../../redux/cartSlice";
 
 type ProductCartProps = {
   id: number;
@@ -14,12 +16,15 @@ type ProductCartProps = {
 };
 
 export default function ProductCart({
+  id,
   title,
   image,
   price,
   discount,
   rate,
 }: ProductCartProps) {
+  const dispatch = useAppDispatch() 
+
   return (
     <div
       className="
@@ -94,6 +99,7 @@ export default function ProductCart({
           "
         >
           <button
+            onClick={() => dispatch(addToCart(id))}
             className="
               bg-base-100 hover:bg-accent hover:text-accent-content 
               tooltip tooltip-accent tooltip-top

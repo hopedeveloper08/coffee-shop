@@ -1,4 +1,4 @@
-import { products } from "../../lib/products";
+import products from "../../data/products";
 import ProductCart from "./ProductCart";
 
 export default function Product() {
@@ -10,15 +10,7 @@ export default function Product() {
       "
     >
       {products.map((item) => (
-        <ProductCart
-          key={item.id}
-          id={item.id}
-          title={item.title}
-          image={item.image}
-          price={item.price}
-          discount={item.discount}
-          rate={item.rate}
-        />
+        <ProductCart key={item.id} {...item} />
       ))}
     </div>
   );

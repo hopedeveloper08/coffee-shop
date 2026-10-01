@@ -4,7 +4,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 
 import ProductCart from "../Products/ProductCart";
-import { products } from "../../lib/products";
+import products from "../../data/products";
 
 export default function Slider() {
   return (
@@ -33,15 +33,7 @@ export default function Slider() {
     >
       {products.reverse().map((item) => (
         <SwiperSlide>
-          <ProductCart
-            key={item.id}
-            id={item.id}
-            title={item.title}
-            image={item.image}
-            price={item.price}
-            discount={item.discount}
-            rate={item.rate}
-          />
+          <ProductCart key={item.id} {...item} />
         </SwiperSlide>
       ))}
     </Swiper>

@@ -1,23 +1,12 @@
 import { HiXMark } from "react-icons/hi2";
 import CartFooter from "./CartFooter";
 import CartItem from "./CartItem";
+import products from "../../data/products";
+import { useAppSelector } from "../../redux/hooks";
 
 export default function MobileCart() {
-  const cart = [
-    {
-      id: 1,
-      title: "قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی",
-      price: 1350000,
-      discount: 350000,
-      image: "/coffee-shop/images/products/p2.png",
-    },
-    {
-      id: 2,
-      title: "قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی",
-      price: 1700000,
-      image: "/coffee-shop/images/products/p1.png",
-    },
-  ];
+  const cart = useAppSelector((state) => state.cart);
+
   return (
     <div className="drawer drawer-end">
       <input id="cart-drawer" type="checkbox" className="drawer-toggle" />
@@ -43,10 +32,8 @@ export default function MobileCart() {
               {cart.map((item) => (
                 <CartItem
                   key={item.id}
-                  title={item.title}
-                  price={item.price}
-                  discount={item.discount || undefined}
-                  image={item.image}
+                  {...products.filter((product) => product.id === item.id)[0]}
+                  count={item.count}
                 />
               ))}
             </div>
@@ -54,7 +41,18 @@ export default function MobileCart() {
           <div className="w-full h-px bg-secondary-soft dark:bg-white/10"></div>
           <CartFooter
             totalPrice={cart
-              .map((item) => item.price)
+              .map((item) => {
+                const product = products.filter(
+                  (product) => product.id === item.id,
+                )[0];
+                if (product.discount) {
+                  return (
+                    (product.price -
+                      Math.floor((product.price * product.discount) / 100)) *
+                    item.count
+                  );
+                } else return product.price * item.count;
+              })
               .reduce((a, b) => a + b, 0)}
           />
         </div>

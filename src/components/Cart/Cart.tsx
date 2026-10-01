@@ -3,27 +3,20 @@ import CartEmpty from "./CartEmpty";
 import CartHeader from "./CartHeader";
 import CartItem from "./CartItem";
 import CartFooter from "./CartFooter";
+import { useAppSelector } from "../../redux/hooks";
+import products from "../../data/products";
 
 export default function Cart() {
-  const cart = [
-    {
-      id: 1,
-      title: "قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی",
-      price: 1350000,
-      discount: 350000,
-      image: "/coffee-shop/images/products/p2.png",
-    },
-    {
-      id: 2,
-      title: "قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی",
-      price: 1700000,
-      image: "/coffee-shop/images/products/p1.png",
-    },
-  ];
+  const cart = useAppSelector((state) => state.cart);
 
   return (
     <div className="relative group">
-      <div className=" rounded-full hover:bg-primary-soft/10 transition-all p-1 xl:p-2 text-primary-soft">
+      <div className=" rounded-full hover:bg-primary-soft/10 transition-all p-1 xl:p-2 text-primary-soft relative">
+        {cart.length > 0 && (
+          <div className="absolute top-1 right-0 rounded-full bg-primary size-4 text-xs text-primary-content flex justify-center items-center pt-1">
+            {cart.map((item) => item.count).reduce((a, b) => a + b)}
+          </div>
+        )}
         <HiOutlineShoppingCart className="size-7 lg:size-8" />
       </div>
       <div className="absolute top-full mt-2 left-0 w-100 p-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 border-t-[3px] border-primary bg-base-200 shadow-normal rounded-2xl text-base-content transition-all delay-75">
@@ -34,17 +27,26 @@ export default function Cart() {
               {cart.map((item) => (
                 <CartItem
                   key={item.id}
-                  title={item.title}
-                  price={item.price}
-                  discount={item.discount || undefined}
-                  image={item.image}
+                  {...products.filter((product) => product.id === item.id)[0]}
+                  count={item.count}
                 />
               ))}
             </div>
             <div className="w-90 mx-auto h-px bg-secondary-soft dark:bg-white/10"></div>
             <CartFooter
               totalPrice={cart
-                .map((item) => item.price)
+                .map((item) => {
+                  const product = products.filter(
+                    (product) => product.id === item.id,
+                  )[0];
+                  if (product.discount) {
+                    return (
+                      (product.price -
+                        Math.floor((product.price * product.discount) / 100)) *
+                      item.count
+                    );
+                  } else return product.price * item.count;
+                })
                 .reduce((a, b) => a + b, 0)}
             />
           </>

@@ -11,6 +11,7 @@ import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
 import Services from "./components/Services/Services";
 import Footer from "./components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <Topbar />
+      <Toaster />
       <main>
         <Header />
         <Products />

@@ -1,33 +1,47 @@
+import CartItemButton from "./CartItemButton";
+
 export type CartItemProps = {
+  id: number;
   title: string;
   image: string;
   price: number;
   discount?: number;
+  count: number;
 };
 
 export default function CartItem({
+  id,
   title,
   image,
   price,
   discount,
+  count,
 }: CartItemProps) {
   return (
-    <div className="flex gap-x-1 md:gap-x-2.5 border-b border-b-gray-100 dark:border-b-white/5 mt-5 pb-5">
+    <div className="w-full flex gap-x-1 md:gap-x-2.5 border-b border-b-gray-100 dark:border-b-white/5 mt-5 pb-5">
       <img src={image} alt="Product Image" className="size-22 md:size-30" />
       <div className="flex flex-col justify-between">
         <div className="font-dana-medium text-sm md:text-base text-base-content line-clamp-2">
           {title}
         </div>
-        <div>
-          {discount && (
-            <div className="font-dana-medium text-accent px-1 text-xs">
-              {discount.toLocaleString()} تومان تخفیف
+        <div className="flex items-center gap-2">
+          <div>
+            {discount && (
+              <div className="font-dana-medium text-accent px-1 text-xs">
+                {Math.floor((price * discount) / 100).toLocaleString()} تومان
+                تخفیف
+              </div>
+            )}
+            <div className="text-base-content text-base md:text-xl font-dana-medium">
+              {discount
+                ? (
+                    price - Math.floor((price * discount) / 100)
+                  ).toLocaleString()
+                : price.toLocaleString()}{" "}
+              <span className="font-dana text-sm">تومان</span>
             </div>
-          )}
-          <div className="text-base-content text-base md:text-xl font-dana-medium">
-            {price.toLocaleString()}{" "}
-            <span className="font-dana text-sm">تومان</span>
           </div>
+          <CartItemButton id={id} count={count} />
         </div>
       </div>
     </div>
